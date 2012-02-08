@@ -1,44 +1,42 @@
 ﻿package;
 
-
+import nme.Assets;
+import nme.display.Bitmap;
 import nme.display.Sprite;
-import nme.display.StageAlign;
-import nme.display.StageScaleMode;
+import nme.events.Event;
 import nme.Lib;
+import nme.text.TextField;
 
-
-class Project extends Sprite {
+class Project extends Sprite 
+{
 	
-	
-	public function new () {
+	public function new()
+	{
+		super();
 		
-		super ();
-		
-		initialize ();
-		
+		#if iphone
+		Lib.current.stage.addEventListener(Event.RESIZE, init);
+		#else
+		addEventListener(Event.ADDED_TO_STAGE, init);
+		#end
 	}
 	
-	
-	private function initialize ():Void {
+	private function init(e):Void 
+	{
+		// Entry point
 		
-		Lib.current.stage.align = StageAlign.TOP_LEFT;
-		Lib.current.stage.scaleMode = StageScaleMode.NO_SCALE;
+		// Stage:
+		// stage.stageWidth x stage.stageHeight @ nme.system.Capabilities.screenDPI
 		
+		// Assets:
+		// nme.Assets.getBitmapData("/assetname.jpg");
 	}
 	
-	
-	
-	
-	// Entry point
-	
-	
-	
-	
-	public static function main () {
-		
-		Lib.current.addChild (new Project ());
-		
+	public static function main() 
+	{
+		// Static entry point
+		Lib.current.stage.align = nme.display.StageAlign.TOP_LEFT;
+		Lib.current.stage.scaleMode = nme.display.StageScaleMode.NO_SCALE;
+		Lib.current.addChild(new Project());
 	}
-	
-	
 }
