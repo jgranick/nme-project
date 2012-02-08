@@ -5,7 +5,11 @@
 	
 	<app main="Project" file="Project" path="Export" />
 	
-	<window width="800" height="600" unless="mobile" />
+	<window width="800" height="480" unless="mobile" />
+	<window orientation="landscape" if="mobile" />
+	<!--<window width="480" height="800" unless="mobile" />
+	<window orientation="portrait" if="mobile" />-->
+	
 	<window fps="60" />
 	
 	<source path="Source" />

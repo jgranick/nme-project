@@ -1,11 +1,8 @@
 ﻿package;
 
-import nme.Assets;
-import nme.display.Bitmap;
 import nme.display.Sprite;
 import nme.events.Event;
 import nme.Lib;
-import nme.text.TextField;
 
 class Project extends Sprite 
 {
