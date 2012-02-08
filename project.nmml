@@ -34,7 +34,7 @@
 	
 	<haxelib name="nme" />
 	
-	<assets path="Assets" rename="" include="*" exclude="nme.svg" />
+	<assets path="Assets" rename="assets" include="*" exclude="nme.svg" />
 	
 	<icon path="Assets/nme.svg" />
 	

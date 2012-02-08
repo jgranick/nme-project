@@ -26,7 +26,7 @@ class Project extends Sprite
 		// stage.stageWidth x stage.stageHeight @ nme.system.Capabilities.screenDPI
 		
 		// Assets:
-		// nme.Assets.getBitmapData("/assetname.jpg");
+		// nme.Assets.getBitmapData("assets/assetname.jpg");
 	}
 	
 	public static function main() 
