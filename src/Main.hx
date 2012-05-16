@@ -4,7 +4,7 @@ import nme.display.Sprite;
 import nme.events.Event;
 import nme.Lib;
 
-class Project extends Sprite 
+class Main extends Sprite 
 {
 	
 	public function new()
@@ -26,7 +26,7 @@ class Project extends Sprite
 		// stage.stageWidth x stage.stageHeight @ nme.system.Capabilities.screenDPI
 		
 		// Assets:
-		// nme.Assets.getBitmapData("assets/assetname.jpg");
+		// nme.Assets.getBitmapData("img/assetname.jpg");
 	}
 	
 	public static function main() 
@@ -34,6 +34,6 @@ class Project extends Sprite
 		// Static entry point
 		Lib.current.stage.align = nme.display.StageAlign.TOP_LEFT;
 		Lib.current.stage.scaleMode = nme.display.StageScaleMode.NO_SCALE;
-		Lib.current.addChild(new Project());
+		Lib.current.addChild(new Main());
 	}
 }
