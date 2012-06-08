@@ -20,6 +20,11 @@ class Main extends Sprite
 	
 	private function init(e):Void 
 	{
+		#if iphone
+		Lib.current.stage.removeEventListener(Event.RESIZE, init);
+		#else
+		removeEventListener(Event.ADDED_TO_STAGE, init);
+		#end
 		// Entry point
 		
 		// Stage:
