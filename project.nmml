@@ -26,6 +26,9 @@
 	<ndll name="zlib" />
 	<ndll name="nme" haxelib="nme" />
 
+	<!-- comment the following option to build both armv6 and armv7 iOS binaries -->
+	<ios binaries="armv7" />
+
 	<!-- optimize JS output -->
 	<haxeflag name="--dead-code-elimination" if="html5" />
 	<haxeflag name="--js-modern" if="html5" />
